@@ -1,0 +1,46 @@
+<?php
+//生成验证码背景图---------------------------------
+header('Content-Type:image/jpeg;');
+//背景图尺寸
+$width=60;
+$height=15;
+//创建一个真彩色画布
+$img=imageCreateTrueColor($width,$height);
+//分配颜色（白色十六进制格式）
+$white = imageColorAllocate($img,0xff,0xff,0xff);
+//填充颜色到画布（中间两个0分别代表x,y,是画布开始填充位置，(0,0)表示位置位于画布左上角，向下y增加，向右x增加）
+imageFill($img,0,0,$white);
+//生成验证码的值----------------------------------
+$chars = '1234567890';//所以可能出现的字符
+$chars_len=strlen($chars);
+$code_len=4;//验证码的长度
+$code='';//初始化验证码字符串
+for($i=1;$i<=$code_len;++$i){
+    $rand=mt_rand(0,$chars_len-1);//随机取0-9中的任意一个数字
+    $code.=$rand;//将取出来的数字连接在一起
+}
+//存入session中，用于验证-------------------------
+session_start();
+$_SESSION['ver_code']=$code;
+//随机分配字符串颜色
+$str_color=imageColorAllocate($img,mt_rand(0,255),mt_rand(0,255),mt_rand(0,255));
+//计算字符串的居中
+//字符串大小
+$font=5;
+//画布尺寸
+$img_w=imageSX($img);
+$img_h=imageSY($img);
+//字体的尺寸
+$font_w=imagefontwidth($font);
+$font_h=imagefontheight($font);
+//字符串的尺寸
+$code_w=$font_w*$code_len;
+$code_h=$font_h;
+$x=($img_w-$code_w)/2;
+$y=($img_h-$code_h)/2;
+//把验证码输出到画布上----------------------------
+imageString($img,$font,$x,$y,$code,$str_color);
+//直接输出
+imageJPEG($img);
+imageDestroy($img);
+?>

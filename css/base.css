@@ -1,0 +1,419 @@
+@charset "UTF-8";
+/*css 初始化 */
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body a{
+    color:#333;
+}
+fieldset,
+img,
+input,
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select,
+input {
+    vertical-align: middle;
+}
+
+select,
+input,
+textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+
+
+/*防止拖动*/
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    /*color: #000;*/
+    /*background: #f3f4f5;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+.container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -60px;
+    /*margin-bottom的负值等于footer高度*/
+}
+
+.left {
+    width: 18%;
+    float: left;
+    margin: 0 1% 0 2%;
+    background: #f3f4f5;
+}
+
+.maincontent {
+    width: 57%;
+    float: left;
+    margin-right: 2%;
+    /*background: green;*/
+}
+
+.right {
+    width: 16%;
+    float: left;
+    background: yellow;
+}
+
+.header-cont {
+    padding: 10px;
+    position: relative;
+    width: auto;
+    height: 68px;
+    margin: 0 auto;
+    background-color: #fff;
+    /*background-color: #0b8bff;*/
+}
+
+.header_navbar {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    background-color: #2196F3;
+}
+
+.header_navbar .navbar-item li {
+    list-style: none;
+}
+
+.header_navbar .navbar-item ul {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1pxpx;
+    margin-left: 1px;
+}
+
+.header_navbar .navbar-item {
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    border-bottom: 4px solid transparent;
+    padding: 0 21px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header_navbar .navbar-item:hover {
+    color: #0b8bff;
+    background-color: #f3f4f5;
+}
+
+.header_navbar ul li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.header_navbar a {
+    text-decoration: none;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+
+/*logo样式*/
+
+.logo {
+    float: left;
+    width: 255px;
+    height: 68px;
+    background-color: #fff;
+}
+
+.logo .lg-pic {
+    padding: 4px;
+}
+
+.logo.lg-text {
+    display: block;
+    float: left;
+    width: 139px;
+    height: 68px;
+    background-color: blue;
+}
+
+
+/*搜索框样式*/
+
+
+
+.search-text {
+    width: 135px;
+    height: 24px;
+    border: 2px solid #E0E9E6;
+    margin: 26px 0 16px 42px;
+    color: #666;
+    font: 14px "microsoft yahei";
+    float: left;
+}
+.search-submit{
+    background-image: url(../images/search_icon.jpg);
+    width: 28px;
+    height: 28px;
+    border: 2px solid #E0E9E6;
+    margin: 26px 0 16px 0px;
+    color: #666;
+    font: 14px "microsoft yahei";
+    float: left;
+}
+
+.search button {
+    width: 80px;
+    height: 28px;
+    margin: 26px 10px 16px 0px;
+    background-color: #E0E9E6;
+    float: left;
+    font: 16px "microsoft yahei";
+    color: #666;
+    cursor: pointer;
+    /* 鼠标变成小手*/
+}
+
+#search-suggest{
+    background-color: #fff;
+    width: 135px;
+    border: 1px solid #999;
+}
+
+#search-suggest ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+#search-suggest ul li{
+    padding:3px;
+    font-size: 14px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+#search-suggest ul li:hover{
+    text-decoration: underline;
+    background-color: #e5e5e5;
+}
+.userbox {
+    float: right;
+    width: 210px;
+    height: 68px;
+    background-color: #fff;
+}
+
+.userbox #sub1 {
+    margin: 22px 35px;
+    background-color: #fff;
+}
+
+.userbox li {
+    float: left;
+    display: block;
+    font: 14px/22px  "microsoft yahei";
+    color:#666;
+    background-color: #fff;
+    padding: 0 3px;
+    cursor: pointer;
+}
+
+.userbox .signin:hover,
+
+
+li.signup a{
+    background: #ff5722;
+    display: inline-block;
+    color: #fff;
+    width: 60px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 19px;
+}
+
+li.signup a:hover{
+    border:1px solid #F44336;
+}
+
+div {
+    display: block;
+}
+
+.push,
+.footer {
+    height: 60px;
+    clear: both;
+}
+/*底部样式开始*/
+.footer {
+    position: relative;
+    width: auto;
+    height: 125px;
+    margin: 0 auto;
+    background-color: #222;
+    border: 1px solid #222;
+    text-align: center;
+}
+
+.ft-link,.ft-copyright {
+    margin: 22px 35px 0 35px;
+    text-align: center;
+}
+
+.footer .ft-link a{
+    margin: 0 4px;
+    text-decoration: none;
+    font: 14px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif;
+    color: #3f51b5;
+
+}
+
+.footer .ft-copyright {
+    display: block;
+    margin: 12px 35px 0 25px;
+
+}
+.footer .ft-copyright {
+    font: 12px/1.5 Microsoft YaHei;
+    color:#f2f2f27a;
+}
+
+
+#list{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+th,td{
+    height: 50px;
+}
+#alist a:hover{
+    border: 2px solid #f44336;
+}
+
+.left .panel .dt {
+    background: url(../images/bg2.gif) repeat-x; height: 30px; line-height: 30px; color: #333; padding-left: 10px; }
+.left .panel .dd .ulbg {
+    padding: 5px; line-height: 22px; }
+.left .panel .dd .ulbg  ul{
+    overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.left .panel .dd ul.ulbg a {
+    background: url(../images/imgArwrt.gif) no-repeat left center; padding-left: 9px;
+    font: 12px/1.5 Microsoft YaHei;
+}
+/*左边侧边栏*/
+
+/*主体部分*/
+.panelweek {
+    /*background: url(../images/bg2.gif) repeat-x;*/
+    background-color: #f3f4f5;
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+    padding-left: 10px; }
+.panelweek .dd .ulbg {
+    padding: 5px; line-height: 28px; }
+.panelweek .dd ul{
+    overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.panelweek .dd .ulbg a {
+    background: url(../images/imgArwrt.gif) no-repeat left center; padding-left: 8px;
+    font: 14px/1.5 Microsoft YaHei;
+}
+.content{
+    float: left;}
+.panelweek {
+    float: right;
+}
+
+#list td button {    
+    padding: 6px 20px;
+    color: #fff;
+    background: #2196F3;
+}
+
+a.btn_list{
+    background: #f44336;
+    display: inline-block;
+    width: 30px;
+    line-height: 30px;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 590px){
+    .header_navbar{white-space: nowrap;}
+    .header-cont{width:100%;white-space: nowrap;}
+}

@@ -1,0 +1,3 @@
+<?php exit;?>	2018-07-13 09:37:24	0.0.0.0	/CPEP3.0/forum/index.php	0	SQL:REPLACE INTO bbs_cache (`k`,`v`,`expiry`) VALUES ('bbs_runtime','null','0') errno: 2002, errstr: 杩炴帴鏁版嵁搴撴湇鍔″櫒澶辫触:由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 
+<?php exit;?>	2018-07-13 09:37:27	0.0.0.0	/CPEP3.0/forum/index.php	0	SQL:REPLACE INTO bbs_cache (`k`,`v`,`expiry`) VALUES ('bbs_runtime','null','0') errno: 2002, errstr: 杩炴帴鏁版嵁搴撴湇鍔″櫒澶辫触:由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 
+<?php exit;?>	2018-07-13 09:37:29	0.0.0.0	/CPEP3.0/forum/index.php	0	SQL:REPLACE INTO bbs_cache (`k`,`v`,`expiry`) VALUES ('bbs_runtime','null','0') errno: 2002, errstr: 杩炴帴鏁版嵁搴撴湇鍔″櫒澶辫触:由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 

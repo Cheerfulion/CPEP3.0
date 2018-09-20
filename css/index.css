@@ -1,0 +1,99 @@
+.hmyt {
+    background-color: #f3f4f5;
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+
+}
+
+ .h-text{
+    height: 30px; line-height: 30px; color: #333;
+    display: block;
+    padding-left: 9px;
+}
+
+.hmyt .asbody{
+    background-color: #fff;
+}
+.hmyt .asbody ul img {
+    float: left;
+    border-radius: 50px;
+    padding: 0 9px;
+}
+.hymt .asbody ul{
+    padding: 0;
+}
+.hymt .asbody li {
+    margin-bottom: 20px;
+}
+.zj-list{
+    padding-left:20px;
+    padding-top:20px;
+
+}
+.hmyt .asbody .text  a {
+    font-size: 14px;
+
+    line-height: 28px;
+}
+.hmyt .asbody .zj-list .hunhe  a.zj-name{
+    color: #1974c1;
+    font: 14px/20px Microsoft YaHei;
+}
+.hmyt .asbody .zj-list .hunhe a.zjyy-bt{
+    color: #fff;
+}
+ .zj-exp {
+    left: 20px;
+     font: 12px/12px Microsoft YaHei;
+
+}
+ .zjyy-bt {
+    display: block;
+    float: right;
+    width: 45px;
+    height: 20px;
+    border-radius: 2px;
+    font: 14px/20px Microsoft YaHei;
+    background-color: #226fd2;
+    text-align: center;
+}
+ .text{
+     padding: 15px 0 28px 0;
+     border-bottom: 1px solid #bdc0c4;
+ }
+/*#main-head,*/
+#main-body{
+    position:relative;
+    top: 20px;
+    margin:0 auto;
+    width:100%;
+    /*height:750px;*/
+    background-color: #00f;}
+
+/* 以上代码设置三个共用样式 */
+#header{border:1px solid #F00}
+#content{ border:1px solid #FF0; height:200px}
+/*#footer{border:1px solid #00F}*/
+.article{
+    display: block;
+    float: left;
+    width: 45%;
+    background-color: #f4f4f5;
+    margin: 12px;
+}
+.article .dt{
+    background-color: #f3f4f5;
+    height: 30px;
+    line-height: 30px;
+    color: #333;
+    padding-left: 10px;
+}
+.article .dd .list {
+    padding: 5px; line-height: 28px; }
+.article .dd ul{
+    overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.article .dd .list a {
+    background: url(../images/imgArwrt.gif) no-repeat left center; padding-left: 8px;
+    font: 14px/1.5 Microsoft YaHei;
+}

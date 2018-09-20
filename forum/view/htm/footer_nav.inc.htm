@@ -1,0 +1,17 @@
+<footer class="text-muted small bg-dark py-4" id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<!--{hook footer_footer_left_start.htm}-->
+				<div class="ft-info"><a href="#">网站简介</a> ┊ <a href="#">About Me</a> ┊ <a href="#">联系我们</a> ┊ <a href="#">诚聘英才</a> ┊ <a href="#">常见问题</a></div>
+                    <p class="ft-copy">Copyright &copy;2017-xxxx </p>
+				<!--{hook footer_footer_left_end.htm}-->
+			</div>
+			<div class="col text-right">
+				<!--{hook footer_footer_right_start.htm}-->
+				Processed: <b><?php echo substr(microtime(1) - $starttime, 0, 5);?></b>, SQL: <b><?php echo count($db->sqls);?></b>
+				<!--{hook footer_footer_right_end.htm}-->
+			</div>
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,70 @@
+
+.body-cont{
+    float: left;
+    display: block;
+    /*height: 550px;*/
+    width: 100%;
+    /*background-color: pink;*/
+    /*background: url("../images/cover.jpg");*/
+    margin-bottom: 13px;
+
+}
+body{
+    background:#f2f2f2;
+}
+/*.push{background: url("../images/cover.jpg");}*/
+ .articleli{
+     background-color: #fff;
+    margin:12px auto 12px auto;
+    border:1px solid #fff;
+    width:700px;
+    /*height:450px;*/
+     overflow: hidden;
+}
+
+.articleli .artcontent {
+    margin: 10px 0 10px 30px;
+    line-height: 23px;
+}
+
+ul, ul li {
+    list-style: none;
+}
+.articleli{
+    font: 12px "微软雅黑", Verdana, "宋体";
+    color: #333;
+}
+
+.articleli .artcontent li a {
+    background: url(../images/bullet.gif) no-repeat 0 3px;
+    padding-left: 10px;
+
+
+}
+
+.art-list{
+    border-bottom: #ccc 1px dashed;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 4px;
+    margin-right: 15px;
+}
+
+.art-list  span{
+    float: right;
+}
+.where {
+
+    /*background: url(../images/arrow_right.gif) no-repeat 0 6px;*/
+    border-bottom: 1px solid #CCC;
+    margin: 10px 0 0 12px;
+    padding-left: 15px;
+
+    background-color: #fff;
+    padding-bottom: 12px;
+}
+.where a{
+    font: 15px "微软雅黑", Verdana, "宋体";
+    font-weight: bold;
+}

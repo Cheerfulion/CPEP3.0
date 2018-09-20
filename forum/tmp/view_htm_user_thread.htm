@@ -1,0 +1,81 @@
+<?php include _include(APP_PATH.'view/htm/header.inc.htm');?>
+
+
+
+<!-- 手机导航 / Mobile navigation -->
+<div class="btn-group mb-3 d-lg-none" role="group" id="user_mobile_nav">
+	
+	<a role="button" class="btn btn-secondary" data-active="menu-user" href="<?php echo url("user-$_uid");?>">个人资料</a>
+	
+	
+	
+	<a role="button" class="btn btn-secondary" data-active="menu-user-thread" href="<?php echo url("user-thread-$_uid");?>">论坛帖子</a>
+	
+</div>
+
+<div class="row">
+
+	<!-- PC 导航 / Mobile navigation -->
+	<div class="col-lg-2 hidden-md hidden-sm" id="user_aside">
+		<div class="card">
+			<div class="card-body text-center">
+				<img class="avatar-4" src="<?php echo $_user['avatar_url'];?>">
+				<br><?php echo $_user['username'];?>
+				
+			</div>
+			<div class="list-group list-group-flush text-center" id="user_nav">
+				
+				<a href="<?php echo url("user-$_uid");?>" class="list-group-item list-group-item-action" data-active="menu-user">个人资料</a>
+				
+				
+				
+				<a href="<?php echo url("user-thread-$_uid");?>" class="list-group-item list-group-item-action" data-active="menu-user-thread">论坛帖子</a>
+				
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-10" id="user_main">
+		
+		<div class="card">
+			<div class="card-header">
+				
+				
+		<ul class="nav nav-tabs card-header-tabs">
+			
+			<li class="nav-item">
+				<a class="nav-link" href="<?php echo url("user-thread-$_uid");?>" data-active="user-thread"><?php echo lang('thread');?></a>
+			</li>
+			
+		</ul>
+	
+				
+			</div>
+			<div class="card-body">
+				
+				
+		<ul class="list-unstyled threadlist">
+			<?php include _include(APP_PATH.'view/htm/thread_list.inc.htm'); ?>
+		</ul>
+		
+		<?php if($pagination) { ?>
+		<nav><ul class="pagination justify-content-center"><?php echo $pagination; ?></ul></nav>
+		<?php } ?>
+	
+				
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+
+
+<?php include _include(APP_PATH.'view/htm/footer.inc.htm');?>
+
+
+
+<script>$('a[data-active="menu-user-thread"]').addClass('active');</script>
+
+<script>
+$('a[data-active="user-thread"]').addClass('active');
+</script>
